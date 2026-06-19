@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bubinnaber12.github.io/portal-index-leyu-com-cn/sitemap.xml
