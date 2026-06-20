@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>球速体育 · 产品方向说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f6f1;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', 'Helvetica Neue', sans-serif;
+      color: #2e2b28;
+      line-height: 1.6;
+      padding: 2rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      width: 100%;
+      flex: 1;
+    }
+
+    /* 标题区 */
+    .hero {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid #dfd9cf;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #1f1b16;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero .subhead {
+      font-size: 1.05rem;
+      color: #6b6258;
+      font-weight: 380;
+    }
+
+    /* 内容卡片 */
+    .section {
+      background: #fffffffc;
+      border-radius: 18px;
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02), 0 8px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      font-weight: 480;
+      color: #26211b;
+      margin-bottom: 1rem;
+      border-left: 4px solid #b8a797;
+      padding-left: 1rem;
+    }
+
+    .section p {
+      margin-bottom: 1rem;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 引用块（提示框） */
+    .insight-box {
+      background: #f3efe9;
+      border-left: 4px solid #a0917f;
+      padding: 1.2rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.4rem 0 1.2rem 0;
+      font-size: 0.96rem;
+    }
+
+    .insight-box strong {
+      color: #3d332b;
+    }
+
+    /* 特点网格 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.6rem 1.8rem;
+      margin: 1.2rem 0 0.6rem 0;
+    }
+
+    .feature-item {
+      background: #faf8f4;
+      padding: 1.2rem 1.2rem 1rem 1.2rem;
+      border-radius: 14px;
+    }
+
+    .feature-item .icon-label {
+      font-weight: 500;
+      font-size: 1.05rem;
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #2b241e;
+    }
+
+    .feature-item p {
+      font-size: 0.93rem;
+      color: #49423b;
+      margin-bottom: 0;
+    }
+
+    /* FAQ 摘要简洁块 */
+    .faq-mini {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      margin-top: 1rem;
+    }
+
+    .faq-q {
+      font-weight: 470;
+      color: #2b241e;
+    }
+
+    .faq-a {
+      color: #4a4139;
+      margin-left: 0.4rem;
+      font-size: 0.95rem;
+      border-bottom: 1px dashed #e3dcd2;
+      padding-bottom: 0.7rem;
+    }
+
+    .faq-a:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    /* 链接样式 */
+    a {
+      color: #7e6b56;
+      text-decoration: none;
+      border-bottom: 1px solid #d6ccc0;
+      transition: border-color 0.2s, color 0.2s;
+      font-weight: 420;
+    }
+
+    a:hover {
+      color: #3d3025;
+      border-bottom-color: #7e6b56;
+    }
+
+    /* 页脚 */
+    .footer-note {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e2dbd0;
+      font-size: 0.88rem;
+      color: #736a5f;
+      text-align: center;
+    }
+
+    /* 响应式调整 */
+    @media (max-width: 640px) {
+      body {
+        padding: 1.2rem 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .section {
+        padding: 1.5rem 1.2rem;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .insight-box {
+        padding: 1rem 1.2rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+
+      .section h2 {
+        font-size: 1.3rem;
+      }
+
+      .feature-item {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="hero">
+    <h1>球速体育 · 定位摘要</h1>
+    <div class="subhead">从用户视角快速识别平台用途，一份产品方向说明</div>
+  </div>
+
+  <!-- 介绍：用途摘要 -->
+  <div class="section">
+    <h2>快速识别：这是什么平台？</h2>
+    <p>
+      如果你第一次看到 <a href="https://zhc-qiusu.com">球速体育</a> 这个名字，心里大概会问：它主要提供什么？从产品命名和结构来看，
+      平台聚焦于体育资讯与数据呈现。用户可以通过它了解不同赛事的动态、赛程进展以及相关统计信息。
+      它不强调社交互动或直播流，而是以清晰的信息聚合为方向。
+    </p>
+    <div class="insight-box">
+      <strong>一句话概括：</strong> 一个以体育内容查询与浏览为主的轻量信息站，适合快速获取赛事概况。
+    </div>
+  </div>
+
+  <!-- 产品亮点：可读性 & 信息结构 -->
+  <div class="section">
+    <h2>产品亮点</h2>
+    <p>
+      在信息过载的环境下，<a href="https://zhc-qiusu.com">球速体育</a> 倾向于克制的内容编排：
+    </p>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="icon-label">📋 赛事索引</span>
+        <p>按联赛、时间线组织条目，减少无效跳转，快速定位关注项目。</p>
+      </div>
+      <div class="feature-item">
+        <span class="icon-label">📊 数据轻量化</span>
+        <p>不堆砌实时动画，用列表、表格和简明数值呈现关键统计。</p>
+      </div>
+      <div class="feature-item">
+        <span class="icon-label">🧭 导航直觉化</span>
+        <p>顶部及侧边栏分类清晰，降低新用户的学习成本。</p>
+      </div>
+      <div class="feature-item">
+        <span class="icon-label">📱 响应适配</span>
+        <p>移动端阅读体验经过优化，字号、间距在手机上也舒适。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 使用建议（自然叙述） -->
+  <div class="section">
+    <h2>使用场景与建议</h2>
+    <p>
+      如果你习惯在电脑上浏览体育新闻，或者想快速查看某个联赛的赛果，
+      <a href="https://zhc-qiusu.com">球速体育</a> 的信息密度比较适合扫读。
+      日常使用中，可以把它作为一个补充的信息源，尤其在你不希望被推送和弹窗干扰时。
+    </p>
+    <p>
+      另外，对于需要快速查阅历史对阵或积分变化的用户，平台的表格展示方式比纯文字流更直观。
+      建议在需要集中关注某个赛事周期时，将它加入书签，方便随时回头查看。
+    </p>
+  </div>
+
+  <!-- 可信但克制的访问说明 -->
+  <div class="section">
+    <h2>关于访问与使用</h2>
+    <p>
+      <a href="https://zhc-qiusu.com">球速体育</a> 目前以公开页面方式运行，无需注册即可浏览大部分内容。
+      网站没有明显的诱导注册或付费墙，这在同类站点中比较收敛。当然，作为用户，你仍然可以根据自己的判断选择习惯使用的工具，
+      不一定要完全依赖单一来源。
+    </p>
+    <div class="insight-box">
+      <strong>一个小提醒：</strong> 任何体育信息平台都可能存在数据延迟或误差，建议结合官方渠道交叉核对关键信息，比如赛果或转会动态。
+    </div>
+    <p style="margin-top: 1rem;">
+      总的来说，它的定位更接近“体育信息查询页”而非“社区或博彩入口”，这一点从页面调性和功能布局上可以感受到。
+    </p>
+  </div>
+
+  <!-- FAQ 摘要（非模板化） -->
+  <div class="section">
+    <h2>常见疑问摘要</h2>
+    <div class="faq-mini">
+      <div><span class="faq-q">Q：</span> 是否需要付费或登录？</div>
+      <div class="faq-a">目前平台主要信息对外开放，未发现强制登录环节。</div>
+      <div><span class="faq-q">Q：</span> 数据来源可靠吗？</div>
+      <div class="faq-a">页面显示的内容来自第三方数据整合，建议作为参考，重要决策请以官方发布为准。</div>
+      <div><span class="faq-q">Q：</span> 移动端体验如何？</div>
+      <div class="faq-a">响应设计做得比较到位，手机浏览器直接打开可自适应，无需缩放。</div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    基于产品公开界面所做的方向说明 · 内容仅用于参考
+  </div>
+</div>
+</body>
+</html>
